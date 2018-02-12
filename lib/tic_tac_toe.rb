@@ -30,7 +30,7 @@ WIN_COMBINATIONS = [
     def move(position, char)
      @board[position] = char
    end
- 
+
    def position_taken?(index_i)
      ((@board[index_i] == "X") || (@board[index_i] == "O"))
    end
@@ -40,7 +40,7 @@ WIN_COMBINATIONS = [
    end
 
  #turn_count
- 
+
    def turn_count
        @board.count{|token| token == "X" || token == "O"}
      end
@@ -49,4 +49,4 @@ WIN_COMBINATIONS = [
       turn_count % 2 == 0 ? "X" : "O"
     end
 
-end
+
