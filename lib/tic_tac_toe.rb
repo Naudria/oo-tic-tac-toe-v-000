@@ -72,5 +72,10 @@ WIN_COMBINATIONS = [
           false
       end
     end
+
+    #full?
+    def full?
+      @board.all?{|occupied| occupied != " "}
+    end
       
 end
