@@ -26,8 +26,6 @@ WIN_COMBINATIONS = [
       user_input.to_i - 1
     end
 
-  end
-
     def move(position, char)
      @board[position] = char
    end
@@ -49,3 +47,5 @@ WIN_COMBINATIONS = [
   def current_player
       turn_count % 2 == 0 ? "X" : "O"
     end
+
+end
